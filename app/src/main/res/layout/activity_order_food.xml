@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/restback"
+    android:backgroundTint="#90FFFFFF"
+    android:backgroundTintMode="src_atop"
+    tools:context="restaurant.com.restaurantapp.OrderFood">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:layout_toStartOf="@+id/q1"
+        android:fontFamily="cursive"
+        android:text="Order Your Food"
+        android:textColor="#ff0112cb"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/q1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="50dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/q2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/q1"
+        android:layout_below="@+id/q1"
+        android:layout_marginTop="26dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/q3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/q2"
+        android:layout_below="@+id/q2"
+        android:layout_marginTop="26dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/q4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/q3"
+        android:layout_below="@+id/q3"
+        android:layout_marginTop="26dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/q5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/q4"
+        android:layout_below="@+id/q4"
+        android:layout_marginTop="20dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/orderbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Order" />
+
+    <CheckBox
+        android:id="@+id/pizzack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/q2"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/orderbtn"
+        android:text="Pizza"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/momosck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/q3"
+        android:layout_alignStart="@+id/pizzack"
+        android:text="Momos"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/noodlesck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/q4"
+        android:layout_alignStart="@+id/momosck"
+        android:text="Noodles"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/browniesck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/noodlesck"
+        android:layout_alignTop="@+id/q4"
+        android:text="Brownies"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/burgerck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/browniesck"
+        android:layout_alignTop="@+id/q5"
+        android:text="Burger"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/q1"
+        android:layout_alignBottom="@+id/q1"
+        android:layout_alignEnd="@+id/orderbtn"
+        android:fontFamily="cursive"
+        android:text="120 Rs"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/q3"
+        android:layout_alignStart="@+id/textView2"
+        android:fontFamily="cursive"
+        android:text="30 Rs"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/noodlesck"
+        android:layout_alignBottom="@+id/noodlesck"
+        android:layout_alignStart="@+id/textView3"
+        android:fontFamily="cursive"
+        android:text="60 Rs"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/q4"
+        android:layout_alignBottom="@+id/q4"
+        android:layout_alignStart="@+id/textView4"
+        android:fontFamily="cursive"
+        android:text="80 Rs"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/burgerck"
+        android:layout_alignBottom="@+id/burgerck"
+        android:layout_alignStart="@+id/textView5"
+        android:fontFamily="cursive"
+        android:text="60 Rs"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pizzaedit"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/q1"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/q1"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/momosedit"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/q2"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/q2"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/noodlesedit"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/q3"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/q3"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/browniesedit"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/q4"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/q4"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/burgeredit"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/q5"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/q5"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orderbtn"
+        android:layout_alignBottom="@+id/orderbtn"
+        android:layout_toStartOf="@+id/textView"
+        android:text="Total" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/orderbtn"
+        android:layout_alignStart="@+id/burgeredit"
+        android:layout_marginBottom="12dp"
+        android:hint="Total"
+
+        />
+
+
+</RelativeLayout>
